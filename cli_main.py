@@ -54,5 +54,3 @@ while True:
             exit('All the data has been saved....')
         case _:
             print('Invalid command, try again.')
-
-
