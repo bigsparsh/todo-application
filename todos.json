@@ -1,15 +1,15 @@
 {
     "Todo_1": {
-        "message": "Kill the Ocean",
-        "timestamp": "Friday 02 June 2023, 03:17:06 PM"
+        "message": "Revive the ocean (edited)",
+        "timestamp": "Friday 02 June 2023, 04:24:22 PM (Updated)"
     },
     "Todo_2": {
         "message": "Clean the room",
         "timestamp": "Friday 02 June 2023, 03:20:48 PM"
     },
     "Todo_3": {
-        "message": " (edited)",
-        "timestamp": "Friday 02 June 2023, 03:31:47 PM (Updated)"
+        "message": "Cure malaria (edited)",
+        "timestamp": "Friday 02 June 2023, 04:22:59 PM (Updated)"
     },
     "Todo_4": {
         "message": "Meet friends",
@@ -18,5 +18,9 @@
     "Todo_5": {
         "message": "Go to watch Guardians of the Galaxy Vol-3 (edited)",
         "timestamp": "Friday 02 June 2023, 03:32:13 PM (Updated)"
+    },
+    "Todo_6": {
+        "message": "Kill the coral reefs in the ocean \"They are just plants, bitch\".",
+        "timestamp": "Friday 02 June 2023, 04:24:53 PM"
     }
 }

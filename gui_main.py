@@ -8,7 +8,8 @@ add_btn = gui.Button('Add')
 
 todo_listbox = gui.Listbox(values=[func.get_todos()[key]['message'] for key in func.get_todos()],
                            size=(40, 10),
-                           key='todos')
+                           key='todos',
+                           enable_events=True)
 edit_btn = gui.Button('Edit')
 
 window = gui.Window('Todo Application',
@@ -27,6 +28,7 @@ while True:
             timestamp = time.strftime('%A %d %B %Y, %I:%M:%S %p')
             todos[f'Todo_{str((num_of_todos + 1))}'] = {'message': todo, 'timestamp': timestamp}
             func.write_todos(todos)
+            window['todos'].update(values=[todos[key]['message'] for key in todos])
             print('Added successfully')
         case 'Edit':
             new_todo_value = value['todo']
@@ -38,6 +40,7 @@ while True:
                     print(todos[todo]['message'])
                     todos[todo]['message'] = f'{new_todo_value} (edited)'
                     todos[todo]['timestamp'] = f'{timestamp} (Updated)'
+            window['todos'].update(values=[todos[key]['message'] for key in todos])
             func.write_todos(todos)
             print('Edited successfully')
 
