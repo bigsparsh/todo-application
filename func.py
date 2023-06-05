@@ -31,5 +31,6 @@ def rearrange_todos(data_local):
     """
     temp_dict = {}
     for index, key in enumerate(data_local.keys()):
-        temp_dict[f'Todo_{index + 1}'] = {'message': data_local[key]['message'], 'timestamp': data_local[key]['timestamp']}
+        temp_dict[f'Todo_{index + 1}'] = {'message': data_local[key]['message'],
+                                          'timestamp': data_local[key]['timestamp']}
     return temp_dict
