@@ -1,6 +1,11 @@
 import PySimpleGUI as gui
 import func
 import time
+import os
+
+if not os.path.exists('todos.json'):
+    with open('todos.json', 'w') as file:
+        file.write('{}')
 
 add_label = gui.Text('Enter todo: ')
 add_input = gui.InputText(tooltip='Enter todo', key='todo')
